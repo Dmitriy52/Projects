@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+			
+			<meta charset="utf-8">
+			<title>Products</title>
+			
+			<link rel="stylesheet" href="../Style/Products.css">
+			<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap" rel="stylesheet">
+				
+	</head>
+	
+	<body>
+	
+		<header> 
+		  <!--topNavLinks-->
+				<div class="topNav">
+
+					<a style="position: absolute;left: 200px;" href="./index.html">На главную</a>
+					<a href="./AboutUs.html"> О нас </a>
+					<a href="./Services.html"> Услуги </a>
+					<a href="./Products.html"> Продукты </a>
+					<a href="./Contacts.html"> Контакты </a>
+
+				</div>
+			
+		</header>
+		
+		    <!--slideShowContainer-->
+		<div class="slideShowContainer">
+				
+				<div class="mySlides fade">
+					
+					<div class="numberText">1/3</div>
+					<img src="../img/xmas1.jpg" style="width: 100%" alt="XmasFirstPicture">
+					<div class="text">Picture One</div>
+				
+				</div>
+			
+				<div class="mySlides fade">
+					
+					<div class="numberText">2/3</div>
+					<img src="../img/xmas2.jpg" style="width: 100%" alt="XmasSecondPicture">
+					<div class="text">Picture Two</div>
+				
+				</div>
+			
+				<div class="mySlides fade">
+					
+					<div class="numberText">3/3</div>
+					<img src="../img/xmas3.jpg" style="width: 100%" alt="XmashirdPicture">
+					<div class="text">Picture Three</div>
+				
+				</div>
+				<a class="prev" onclick="plusSlide(-1)">&#10094</a>
+				<a class="next" onclick="plusSlide(1)">&#10095</a>
+		</div>
+		<br>
+		
+		<div style="text-align: center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		
+		</div>
+		
+			<script src="../JS/Products.js"></script>
+	</body>
+</html>

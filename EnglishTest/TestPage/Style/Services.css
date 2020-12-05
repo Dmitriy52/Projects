@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+	background-image: url(../img/ServiceBack.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.topNav {
+	font-family: 'Cormorant Infant', serif;
+	
+	padding-left: 393px;
+	background-color: white;
+	overflow: hidden;
+	box-shadow: 2px 9px 20px 1px rgba(0, 0, 0, 0.15);
+	
+}
+
+.topNav a {
+	float: left;
+	color: black;
+	text-align: center;
+	padding: 14px 25px;
+	text-decoration: none;
+	font-size: 17px;
+	
+}
+
+.topNav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.topNav a:active {
+	background-color: #D4E5F5;
+	color: black;
+}
+
+.mainCont {
+	position: absolute;
+	top: 70px;
+	left: 350px;
+}
+
+
+.click {
+  position: absolute;
+	top: 200px;
+	left: 250px;
+  width: 180px;
+  height: 60px;
+  cursor: pointer;
+  background: #FFFF7C;
+  border: 1px solid #FEBE00;
+border-radius: 9px;
+  outline: none;
+	transition: 1s ease-in-out;
+	box-shadow: inset rgba(0,0,0,.6) 0 -2px 5px, inset rgba(252,255,255,.7) 0 2px 5px, rgba(0,0,0,.8) 0 2px 5px -1px;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+	
+	border-radius: 9px;
+}
+
+.click:hover {
+  transition: 1s ease-in-out;
+  background: #FF6400;
+	border: 1px solid #FEBE00;
+}
+
+.click:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.click:active {
+	padding-bottom: 1px;
+  box-shadow:
+   inset rgba(0,0,0,1) 0 1px 3px,
+   inset rgba(0,0,0,.6) 0 -2px 5px,
+   inset rgba(252,255,255,.7) 0 2px 5px,
+   0 1px rgba(255,255,255,.08);
+}
+.click span {
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.popUpW {
+	font-family: Open Sans;
+	position: absolute;
+	width: 490px;
+	height: 550px;
+	top: 20px;
+	left: 20px;
+	background: #FFFFFF;
+	padding: 10px;
+	box-shadow: inset rgba(0,0,0,.6) 0 -2px 5px, inset rgba(252,255,255,.7) 0 2px 5px, rgba(0,0,0,.8) 0 2px 5px -1px;
+	
+}
+
+.headText {
+	
+	font-size: 30px;
+	text-align: center;
+	color: #323232;
+}
+
+.popUpW p {
+	
+	font-size: 18px;
+	color: #323232;
+}
+
+.popUpW span {
+	
+	font-size: 18px;
+	color: #323232;
+}
+
+.popUpW select {
+	
+	width: auto;
+	height: 50px;
+	font-size: 18px;
+	color: #323232;
+}
+
+.popUpW input {
+	width: 230px;
+	height: 50px;
+	font-size: 18px;
+	color: #323232;
+}
+
+.popUpW ul {
+	font-size: 18px;
+	color: #323232;
+}
+
+.emlArrowBack {
+	position: absolute;
+	top: -20px;
+	cursor: pointer;
+}
+
+.butNext {
+	border: 0;
+	width: 157px;
+	height: 57px;
+	background-image: url(../img/ServiceButNext.png);
+	background-repeat : no-repeat;
+}
+
+.butNext:disabled {
+	border: 0;
+	width: 157px;
+	height: 57px;
+	background-image: url(../img/ServiceButNextDis.png);
+	background-repeat : no-repeat;
+}
+
+
+.butSend {
+	 border: 0;
+	 width: 240px;
+     height: 60px;
+	 background-image: url('../img/ServiceButSend.png');
+	 background-repeat : no-repeat;
+}
+
+.butSend:disabled {
+     border: 0;
+     width: 240px;
+     height: 60px;
+	 background-image: url('../img/ServiceButSendDis.png');
+	 background-repeat : no-repeat;
+}
+
+.arrBackTxt {
+	position: absolute;
+	top: -25px;
+	left: 30px;
+	cursor: pointer;
+}
+
+.emlFooterTxt {
+	list-style-type: none;
+}
