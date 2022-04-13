@@ -1,34 +1,62 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="utf-8">
-	<title>AboutUs</title>
-	<link rel="stylesheet" href="../Style/AboutUs.css">
-	<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap" rel="stylesheet">
-	
-</head>
- 	<body>
-			<header> 
-		  <!--topNavLinks-->
-				<div class="topNav">
+  <head>
+    <meta charset="utf-8" />
+    <title>AboutUs</title>
+    <link rel="stylesheet" href="../Style/AboutUs.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!--topNavLinks-->
+      <div class="topNav">
+        <a href="../index.html">На главную</a>
+        <a href="./AboutUs.html"> О нас </a>
+        <a href="./Services.html"> Услуги </a>
+        <a href="./Products.html"> Продукты </a>
+        <a href="./Contacts.html"> Контакты </a>
+      </div>
+    </header>
 
-					<a style="position: absolute;left: 200px;" href="./index.html">На главную</a>
-					<a href="./AboutUs.html"> О нас </a>
-					<a href="./Services.html"> Услуги </a>
-					<a href="./Products.html"> Продукты </a>
-					<a href="./Contacts.html"> Контакты </a>
+    <!--canvasContainer-->
+    <div id="mainContainer" class="mainContainer">
+      <div id="messageWrapper" class="messageWrapper">
+        <div class="messageContainer">
+          <span class="message"></span>
+          <button
+            id="button-over"
+            class="button-over"
+            onclick="window.location.reload();"
+          >
+            Ок
+          </button>
+        </div>
+      </div>
+      <div class="button-start-wrapper">
+        <button id="button-start" class="button-start">Start</button>
+      </div>
 
-				</div>
-			
-			</header>
-			
-				<!--canvasContainer-->
-			<div id="canvasContainer" class="canvaContain">
-				
-				<canvas id="gameCanvas" class="canvasWindow"></canvas>
-			</div>
-		
-		<script src="../JS/AboutUs.js" type="text/javascript"></script>
-		
-	</body>	
+      <div id="canvasContainer" class="canvaContain">
+        <canvas id="gameCanvas" class="canvasWindow"></canvas>
+      </div>
+      <div class="move-platform-buttons">
+        <button id="button-left" class="button-left">Left</button>
+        <button id="button-right" class="button-right">Right</button>
+      </div>
+      <div class="game-info">
+        To start the game, press "Strat" or "Space" on the keyboard. <br />
+        To move the platform, press "Left" and "Right" or use the buttons on the
+        keyboard "Left" and "Right"
+      </div>
+    </div>
+
+    <script src="../JS/AboutUs.js" type="text/javascript"></script>
+  </body>
 </html>

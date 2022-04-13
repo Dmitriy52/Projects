@@ -1,92 +1,92 @@
 <!DOCTYPE html>
 <html>
-	
-	<head>
-			
-		<meta charset="utf-8">
-		
-		<link rel="stylesheet" href="../Style/Services.css">
-		<link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-	</head>	
-		
-	<body>
-		
-		<header> 
-		  <!--topNavLinks-->
-				<div class="topNav">
+  <head>
+    <meta charset="utf-8" />
 
-					<a style="position: absolute;left: 200px;" href="./index.html">На главную</a>
-					<a href="./AboutUs.html"> О нас </a>
-					<a href="./Services.html"> Услуги </a>
-					<a href="./Products.html"> Продукты </a>
-					<a href="./Contacts.html"> Контакты </a>
+    <link rel="stylesheet" href="../Style/Services.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-				</div>
-			
-		
-		</header>
-		
-		
-		<div id="mainContainer" class="mainCont">
-			
-			<button id = "butClickMe" class="click">
-				
-				<span> Сreate order </span>
-				
-				<svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-					  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-					  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
-				</svg>
-			</button>
-			
-			
-			
-			
-				<!--popUpContainer-->
-				<div id="popUpWindows" class="popUpW" style="display: none" >
-					
-					<h1 id="popHeaderText" class="headText">Приобрести курс</h1>
-					<br>
-					<p id="courseListText">Продолжительность курса (по 2-а занятия в неделю)</p>
-					<select id="listOfCourses" required>
-							<option value="0">продолжительность курса</option>
-							<option value="1">3 месяца 20000р</option>
-							<option value="2">6 месяцев 48000р</option>
-							<option value="3">12 месяцев 94000р</option>
-					</select><br>
-							
-					
-					<br><p id="LessonsInpText">Сколько занятий в неделю планируете</p>
-					
-					<input type="number" id="lessonsInp" value="0" min=2 max="5"> 
-					<br><span id="sumOfLessonsTxt"></span>
-					<br>
-					
-					<br><p>Для каких целей вы планируете заниматься?</p>
-					
-					<select id="targlList" class="targList">
-							<option value="0">Выберите цель</option>
-							<option value="1">Повысить уровень своих знаний</option>
-							<option value="2">Нужна помощь с домашними заданиями по школе</option>
-							<option value="3">Не знаю, но изучать английский сейчас модно</option>
-					</select><br>
-					
-					<br><input type="checkbox" id="call" style="width: auto; height: auto;" > <span id="callTxt">Нужен предварительный звонок </span><br><br>
-					
-					<span id="orderPriceTxt" style="font-size: 24px">Сумма Заказа:</span>
-					<span id="orderPrice" style="font-size: 24px">0</span><br>
-					
-					<button id="butNextPosition" class="butNext">Далее</button>
-					
-					
-				</div>
-			
-		</div>
-		
-		<script src="../JS/Services.js"></script>
-	</body>
-	
-	
+  <body>
+    <header>
+      <!--topNavLinks-->
+      <div class="topNav">
+        <a href="../index.html">На главную</a>
+        <a href="./AboutUs.html"> О нас </a>
+        <a href="./Services.html"> Услуги </a>
+        <a href="./Products.html"> Продукты </a>
+        <a href="./Contacts.html"> Контакты </a>
+      </div>
+    </header>
 
+    <div class="wrapper">
+      <div id="mainContainer" class="mainCont">
+        <button id="butClickMe" class="click">
+          <span> Сreate order </span>
+
+          <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+          </svg>
+        </button>
+
+        <!--popUpContainer-->
+        <div id="popUpWindows" class="popUpW" style="display: none">
+          <h1 id="popHeaderText" class="headText">Приобрести курс</h1>
+          <br />
+          <p id="courseListText">
+            Продолжительность курса (по 2-а занятия в неделю)
+          </p>
+          <select id="listOfCourses" required>
+            <option value="0">продолжительность курса</option>
+            <option value="1">3 месяца 20000р</option>
+            <option value="2">6 месяцев 48000р</option>
+            <option value="3">12 месяцев 94000р</option></select
+          ><br />
+
+          <br />
+          <p id="LessonsInpText">Сколько занятий в неделю планируете</p>
+
+          <input type="number" id="lessonsInp" value="0" min="2" max="5" />
+          <br /><span id="sumOfLessonsTxt"></span>
+          <br />
+
+          <br />
+          <p>Для каких целей вы планируете заниматься?</p>
+
+          <select id="targlList" class="targList">
+            <option value="0">Выберите цель</option>
+            <option value="1">Повысить уровень своих знаний</option>
+            <option value="2">
+              Нужна помощь с домашними заданиями по школе
+            </option>
+            <option value="3">
+              Не знаю, но изучать английский сейчас модно
+            </option></select
+          ><br />
+
+          <br /><input
+            type="checkbox"
+            id="call"
+            style="width: auto; height: auto; cursor: pointer"
+          />
+          <span id="callTxt">Нужен предварительный звонок </span><br /><br />
+
+          <span id="orderPriceTxt" style="font-size: 24px">Сумма заказа:</span>
+          <span id="orderPrice" style="font-size: 24px">0</span><br />
+
+          <button id="butNextPosition" class="butNext">Далее</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../JS/Services.js"></script>
+  </body>
 </html>

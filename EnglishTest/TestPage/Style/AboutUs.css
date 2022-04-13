@@ -1,53 +1,207 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-	background-color: white;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
 }
 
 .topNav {
-	font-family: 'Cormorant Infant', serif;
-	
-	padding-left: 393px;
-	background-color: white;
-	overflow: hidden;
-	box-shadow: 2px 9px 20px 1px rgba(0, 0, 0, 0.15);
-	
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cormorant Infant", serif;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 2px 9px 20px 1px rgba(0, 0, 0, 0.15);
 }
 
 .topNav a {
-	float: left;
-	color: black;
-	text-align: center;
-	padding: 14px 25px;
-	text-decoration: none;
-	font-size: 17px;
-	
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 .topNav a:hover {
-	background-color: #ddd;
-	color: black;
+  background-color: #ddd;
+  color: black;
 }
 
 .topNav a:active {
-	background-color: #D4E5F5;
-	color: black;
+  background-color: #d4e5f5;
+  color: black;
 }
-
+.mainContainer {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 1fr 0.2fr;
+  justify-content: center;
+  margin: 30px;
+}
 .canvaContain {
-	position: absolute;
-	left: 350px;
-	top:150px;
+  display: grid;
+  grid-column: 2;
+  grid-row: 1;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .canvasWindow {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 720px;
-	height: 400px;
+  width: 720px;
+  height: 400px;
+}
+.game-info {
+  display: grid;
+  grid-column: 2;
+  grid-row: 2;
+  justify-content: center;
+  margin: 30px;
+
+  font-family: "Amatic SC", cursive;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 50px;
+  text-align: center;
+}
+.button-start-wrapper {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-column: 2;
+  grid-row: 1;
+}
+.button-start {
+  width: 267px;
+  height: 62px;
+  font-size: 20px;
+  background: rgba(238, 194, 50, 0.9);
+  border: none;
+  box-shadow: inset rgba(0, 0, 0, 0.6) 0 -2px 5px,
+    inset rgba(252, 255, 255, 0.7) 0 2px 5px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px;
+  border-radius: 15px;
+  color: rgb(0, 79, 86);
+  outline: none;
+  z-index: 999;
+}
+.button-start:hover {
+  background: #51d41d;
+  cursor: pointer;
+}
+
+.button-start:active {
+  padding-bottom: 1px;
+  box-shadow: inset rgba(0, 0, 0, 1) 0 1px 3px,
+    inset rgba(0, 0, 0, 0.6) 0 -2px 5px,
+    inset rgba(252, 255, 255, 0.7) 0 2px 5px, 0 1px rgba(255, 255, 255, 0.08);
+}
+.messageWrapper {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  grid-column: 2;
+  grid-row: 1;
+  z-index: 999;
+}
+.messageContainer {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Amatic SC", cursive;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 50px;
+  text-align: center;
+
+  height: 130px;
+  width: 300px;
+  border: 1px;
+  border-color: #eec232;
+  border-style: solid;
+  border-radius: 15px;
+  box-shadow: inset rgba(0, 0, 0, 0.6) 0 -2px 5px,
+    inset rgba(252, 255, 255, 0.7) 0 2px 5px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px;
+  background: radial-gradient(at center, #f6f6f6 65%, #eec232);
+}
+.button-over {
+  width: 145px;
+  height: 38px;
+  background: #eec232;
+  border: none;
+  box-shadow: inset rgba(0, 0, 0, 0.6) 0 -2px 5px,
+    inset rgba(252, 255, 255, 0.7) 0 2px 5px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px;
+  border-radius: 15px;
+  color: rgb(0, 79, 86);
+  outline: none;
+}
+.button-over:hover {
+  background: #51d41d;
+  cursor: pointer;
+}
+
+.button-over:active {
+  padding-bottom: 1px;
+  box-shadow: inset rgba(0, 0, 0, 1) 0 1px 3px,
+    inset rgba(0, 0, 0, 0.6) 0 -2px 5px,
+    inset rgba(252, 255, 255, 0.7) 0 2px 5px, 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.move-platform-buttons {
+  display: flex;
+  justify-content: space-around;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.button-left {
+  width: 145px;
+  height: 38px;
+  background: rgba(238, 194, 50, 0.9);
+  border: none;
+  box-shadow: inset rgba(0, 0, 0, 0.6) 0 -2px 5px,
+    inset rgba(252, 255, 255, 0.7) 0 2px 5px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px;
+  border-radius: 15px;
+  color: rgb(0, 79, 86);
+  outline: none;
+}
+.button-left:hover {
+  background: #51d41d;
+  cursor: pointer;
+}
+
+.button-left:active {
+  padding-bottom: 1px;
+  box-shadow: inset rgba(0, 0, 0, 1) 0 1px 3px,
+    inset rgba(0, 0, 0, 0.6) 0 -2px 5px,
+    inset rgba(252, 255, 255, 0.7) 0 2px 5px, 0 1px rgba(255, 255, 255, 0.08);
+}
+.button-right {
+  width: 145px;
+  height: 38px;
+  background: rgba(238, 194, 50, 0.9);
+  border: none;
+  box-shadow: inset rgba(0, 0, 0, 0.6) 0 -2px 5px,
+    inset rgba(252, 255, 255, 0.7) 0 2px 5px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px;
+  border-radius: 15px;
+  color: rgb(0, 79, 86);
+  outline: none;
+}
+.button-right:hover {
+  background: #51d41d;
+  cursor: pointer;
+}
+
+.button-right:active {
+  padding-bottom: 1px;
+  box-shadow: inset rgba(0, 0, 0, 1) 0 1px 3px,
+    inset rgba(0, 0, 0, 0.6) 0 -2px 5px,
+    inset rgba(252, 255, 255, 0.7) 0 2px 5px, 0 1px rgba(255, 255, 255, 0.08);
 }

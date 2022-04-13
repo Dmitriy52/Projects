@@ -1,49 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="../Style/Test.css">
-	
-	<link href="https://fonts.googleapis.com/css2?family=Alike&display=swap" rel="stylesheet">	
-	
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../Style/Test.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alike&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Test</title>
-		
-</head>
-<body>
-				<!--windowWithTest-->
-	<div  class="testWindow" id = "testWindow">
-		
-				<!--The Test-->
-		
-		<div id = "mainContainer" class="mainContain">
-			
+  </head>
+  <body>
+    <!--windowWithTest-->
+    <div class="wrapper">
+      <div class="testWindow" id="testWindow">
+        <!--The Test-->
 
+        <div id="mainContainer" class="mainContain">
+          <div id="test" class="div">
+            <button
+              id="buttonPreviousQuestion"
+              class="buta"
+              style="display: none"
+            >
+              Предыдущий
+            </button>
 
-			<div id = "test" class= "div"> </div>
+            <button id="buttonNextQuestion" class="butb" style="display: none">
+              Следующий
+            </button>
 
-			<!--<button id = "buttonStartTest" class= "buta" align="center" >Начать</button> -->
+            <button id="buttonCheckAnswers" class="butc" style="display: none">
+              Проверить
+            </button>
 
+            <button
+              onclick="document.location.reload();"
+              id="butTryAgain"
+              class="butTryAgn"
+              style="display: none"
+            >
+              Пройти ещё раз
+            </button>
 
-			<button id = "buttonPreviousQuestion" class= "buta" style="display: none" >Предыдущий</button>
+            <button
+              onclick="document.location='../index.html'"
+              id="butBackToIndex"
+              class="butBackInd"
+              style="display: none"
+            >
+              На главную
+            </button>
+          </div>
 
-			<button id = "buttonNextQuestion" class= "butb" style="display: none" >Следующий</button>
-
-			<button id = "buttonCheckAnswers" class= "butc" style="display: none" >Проверить</button>	   
-			
-			<button onclick="document.location.reload();" id = "butTryAgain" class="butTryAgn" style="display: none">Пройти ещё раз</button>
-			
-			<button onclick="document.location='./index.html'" id="butBackToIndex" class="butBackInd" style="display: none">На главную</button>
-			
-			
-		</div>
-				
-				<!--images-->
-		<div>
-			<img src="../img/LeftArrow.png" class="leftArrow" alt="LeftArrow" id="leftArrow">
-			<img src="../img/RightArrow.png" class="rightArrow" alt="RightArrow" id="rightArrow">
-		</div>
-			
-	</div>	
-	<script src="../JS/Test.js"></script>
-</body>
+          <!--images-->
+          <div>
+            <img
+              src="../img/LeftArrow.png"
+              class="leftArrow"
+              alt="LeftArrow"
+              id="leftArrow"
+            />
+            <img
+              src="../img/RightArrow.png"
+              class="rightArrow"
+              alt="RightArrow"
+              id="rightArrow"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../JS/Test.js"></script>
+  </body>
 </html>

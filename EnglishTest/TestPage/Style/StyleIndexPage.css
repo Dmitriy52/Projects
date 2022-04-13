@@ -5,122 +5,137 @@
 }
 
 body {
-	background-color: white;
+  background-color: white;
+  display: grid;
 }
 
-	/*topNav верхняя навигация  topNav a ссылки навигации*/
-
-.topNav{
-	font-family: 'Cormorant Infant', serif;
-	
-	padding-left: 393px;
-	background-color: white;
-	overflow: hidden;
-	box-shadow: 2px 9px 20px 1px rgba(0, 0, 0, 0.15);
-	
+.topNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Cormorant Infant", serif;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 2px 9px 20px 1px rgba(0, 0, 0, 0.15);
 }
 
-.topNav a{
-	float: left;
-	color: black;
-	text-align: center;
-	padding: 14px 25px;
-	text-decoration: none;
-	font-size: 17px;
-	
+.topNav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-.topNav a:hover{
-	background-color: #ddd;
-	color: black;
+.topNav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-.topNav a:active{
-	background-color: #D4E5F5;
-	color: black;
+.topNav a:active {
+  background-color: #d4e5f5;
+  color: black;
 }
 
-
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: center;
+}
+.information-text-wrapper {
+  display: grid;
+  grid-template-rows: 1fr 0.6fr 1fr;
+  grid-column: 2;
+  align-items: start;
+  justify-content: center;
+}
 .learn-text {
-	font-family: 'Amatic SC', cursive;
-	display: inline-block;
-	font-style: normal;
-	font-size: 72px;
-	line-height: 105px;
-	margin-top: 30px;
-	margin-left: 425px;
-	text-align: center;
-	text-transform: uppercase;
+  font-family: "Amatic SC", cursive;
+  font-style: normal;
+  font-size: 72px;
+  line-height: 105px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.text-box{
-	font-family: 'Cormorant Infant', serif;
-	display: inline-block;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 24px;
-	line-height: 29px;
-	text-align: center;
-	margin-top: 30px;
-	margin-left: 430px;
-	
+.text-box {
+  font-family: "Cormorant Infant", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+}
+.button-wrapper {
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
-.start-Test{
-	
-	font-family: 'Alike', serif;
-	margin-top: 30px;
-	margin-left: 470px;
-	display: inline-block;
-	width: 267px;
-	height: 62px;
-	line-height: 50px;
-	font-size: 20px;
-	text-align: center;
-	text-decoration: none;
-	text-shadow: 0 1px rgba(255,255,255,.2), 0 -1px rgba(0,0,0,.8);
-	outline: none;
-	border: none;
-	border-radius: 100px;
-	background: #A3CEE7 radial-gradient(150% 100% at 50% 5px, rgba(255,255,255,.2), rgba(0,0,0,0));
-	box-shadow: inset rgba(0,0,0,.6) 0 -2px 5px, inset rgba(252,255,255,.7) 0 2px 5px, rgba(0,0,0,.8) 0 2px 5px -1px;
-	color: rgb(0,79,86);
-	user-select: none;
+.start-test {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-family: "Alike", serif;
+  width: 267px;
+  height: 62px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.2), 0 -1px rgba(0, 0, 0, 0.8);
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  background: #a3cee7
+    radial-gradient(
+      150% 100% at 50% 5px,
+      rgba(255, 255, 255, 0.2),
+      rgba(0, 0, 0, 0)
+    );
+  box-shadow: inset rgba(0, 0, 0, 0.6) 0 -2px 5px,
+    inset rgba(252, 255, 255, 0.7) 0 2px 5px, rgba(0, 0, 0, 0.8) 0 2px 5px -1px;
+  color: rgb(0, 79, 86);
+  user-select: none;
 }
 
-.start-Test a{
-	text-decoration: none;
-	font-size: 24px;
-	color: rgb(0,79,86);
+.start-test a {
+  text-decoration: none;
+  font-size: 24px;
+  color: rgb(0, 79, 86);
 }
 
-.start-Test:hover{
-	background: #29a6ff;
- 	cursor: pointer;
+.start-test:hover {
+  background: #29a6ff;
+  cursor: pointer;
 }
 
-.start-Test:active {
+.start-test:active {
   padding-bottom: 1px;
-  box-shadow:
-   inset rgba(0,0,0,1) 0 1px 3px,
-   inset rgba(0,0,0,.6) 0 -2px 5px,
-   inset rgba(252,255,255,.7) 0 2px 5px,
-   0 1px rgba(255,255,255,.08);
-  
+  box-shadow: inset rgba(0, 0, 0, 1) 0 1px 3px,
+    inset rgba(0, 0, 0, 0.6) 0 -2px 5px,
+    inset rgba(252, 255, 255, 0.7) 0 2px 5px, 0 1px rgba(255, 255, 255, 0.08);
 }
 
-.leftPage{
-position: absolute;
-width: 400px;
-height: 400px;
-left: -56px;
-top: 257px;
+.left-img-container {
+  grid-row: 1;
+  grid-column: 1;
+  width: 700px;
+  height: 700px;
+  padding-top: 130px;
+}
+.left-img {
+  width: 700px;
+  height: 700px;
 }
 
-.rightPage{
-position: absolute;
-width: 450px;
-height: 600px;
-left: 916px;
-top: 49px;
+.right-img-container {
+  grid-row: 1;
+  grid-column: 3;
+}
+.right-img {
+  width: 610px;
+  height: 800px;
 }
