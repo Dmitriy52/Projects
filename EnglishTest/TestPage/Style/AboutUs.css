@@ -53,8 +53,8 @@ body {
 }
 
 .canvasWindow {
-  width: 720px;
-  height: 400px;
+  width: 500px;
+  height: 300px;
 }
 .game-info {
   display: grid;
@@ -156,7 +156,7 @@ body {
 
 .move-platform-buttons {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   grid-column: 2;
   grid-row: 2;
 }
